@@ -26,7 +26,7 @@
         >
 
         <ScrollView
-            android:layout_width="396dp"
+            android:layout_width="380dp"
             android:layout_height="720dp"
             app:layout_constraintBottom_toTopOf="@+id/btnEditWorkout"
             app:layout_constraintEnd_toEndOf="parent"
@@ -92,41 +92,43 @@
                         android:id="@+id/figure_3"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:background="@drawable/roundbutton"
-                        android:onClick="decrementButton"
-                        android:text="6"
                         android:layout_below="@+id/txtWorkoutExcersis"
                         android:layout_marginStart="30dp"
                         android:layout_marginTop="10dp"
                         android:layout_toEndOf="@+id/figure_2"
+                        android:background="@drawable/roundbutton"
+                        android:onClick="decrementButton"
+                        android:text="6"
                         android:textColor="#fff" />
+
                     <Button
                         android:id="@+id/figure_4"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:background="@drawable/roundbutton"
-                        android:onClick="decrementButton"
-                        android:text="6"
                         android:layout_below="@+id/txtWorkoutExcersis"
                         android:layout_marginStart="30dp"
                         android:layout_marginTop="10dp"
                         android:layout_toEndOf="@+id/figure_3"
+                        android:background="@drawable/roundbutton"
+                        android:onClick="decrementButton"
+                        android:text="6"
                         android:textColor="#fff" />
 
                     <Button
                         android:id="@+id/figure_5"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:background="@drawable/roundbutton"
-                        android:onClick="decrementButton"
-                        android:text="6"
                         android:layout_below="@+id/txtWorkoutExcersis"
                         android:layout_marginStart="30dp"
                         android:layout_marginTop="10dp"
                         android:layout_toEndOf="@+id/figure_4"
+                        android:background="@drawable/roundbutton"
+                        android:onClick="decrementButton"
+                        android:text="6"
                         android:textColor="#fff" />
 
                 </RelativeLayout>
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -173,45 +175,46 @@
                         android:text="6"
                         android:textColor="#fff" />
 
-                        <Button
-                            android:id="@+id/figure_32"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:background="@drawable/roundbutton"
-                            android:onClick="decrementButton"
-                            android:text="6"
-                            android:layout_below="@+id/txtWorkoutExcersis2"
-                            android:layout_marginStart="30dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_toEndOf="@+id/figure_22"
-                            android:textColor="#fff" />
+                    <Button
+                        android:id="@+id/figure_32"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/txtWorkoutExcersis2"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toEndOf="@+id/figure_22"
+                        android:background="@drawable/roundbutton"
+                        android:onClick="decrementButton"
+                        android:text="6"
+                        android:textColor="#fff" />
+
                     <Button
                         android:id="@+id/figure_42"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:background="@drawable/roundbutton"
-                        android:onClick="decrementButton"
-                        android:text="6"
                         android:layout_below="@+id/txtWorkoutExcersis2"
                         android:layout_marginStart="30dp"
                         android:layout_marginTop="10dp"
                         android:layout_toEndOf="@+id/figure_32"
+                        android:background="@drawable/roundbutton"
+                        android:onClick="decrementButton"
+                        android:text="6"
                         android:textColor="#fff" />
 
                     <Button
                         android:id="@+id/figure_52"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:background="@drawable/roundbutton"
-                        android:onClick="decrementButton"
-                        android:text="6"
                         android:layout_below="@+id/txtWorkoutExcersis2"
                         android:layout_marginStart="30dp"
                         android:layout_marginTop="10dp"
                         android:layout_toEndOf="@+id/figure_42"
+                        android:background="@drawable/roundbutton"
+                        android:onClick="decrementButton"
+                        android:text="6"
                         android:textColor="#fff" />
 
-                    </RelativeLayout>
+                </RelativeLayout>
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -263,38 +266,39 @@
                         android:id="@+id/figure_33"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:background="@drawable/roundbutton"
-                        android:onClick="decrementButton"
-                        android:text="6"
                         android:layout_below="@+id/txtWorkoutExcersis3"
                         android:layout_marginStart="30dp"
                         android:layout_marginTop="10dp"
                         android:layout_toEndOf="@+id/figure_23"
+                        android:background="@drawable/roundbutton"
+                        android:onClick="decrementButton"
+                        android:text="6"
                         android:textColor="#fff" />
+
                     <Button
                         android:id="@+id/figure_43"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:background="@drawable/roundbutton"
-                        android:onClick="decrementButton"
-                        android:text="6"
                         android:layout_below="@+id/txtWorkoutExcersis3"
                         android:layout_marginStart="30dp"
                         android:layout_marginTop="10dp"
                         android:layout_toEndOf="@+id/figure_33"
+                        android:background="@drawable/roundbutton"
+                        android:onClick="decrementButton"
+                        android:text="6"
                         android:textColor="#fff" />
 
                     <Button
                         android:id="@+id/figure_53"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:background="@drawable/roundbutton"
-                        android:onClick="decrementButton"
-                        android:text="6"
                         android:layout_below="@+id/txtWorkoutExcersis3"
                         android:layout_marginStart="30dp"
                         android:layout_marginTop="10dp"
                         android:layout_toEndOf="@+id/figure_43"
+                        android:background="@drawable/roundbutton"
+                        android:onClick="decrementButton"
+                        android:text="6"
                         android:textColor="#fff" />
 
                 </RelativeLayout>
@@ -349,38 +353,39 @@
                         android:id="@+id/figure_34"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:background="@drawable/roundbutton"
-                        android:onClick="decrementButton"
-                        android:text="6"
                         android:layout_below="@+id/txtWorkoutExcersis4"
                         android:layout_marginStart="30dp"
                         android:layout_marginTop="10dp"
                         android:layout_toEndOf="@+id/figure_24"
+                        android:background="@drawable/roundbutton"
+                        android:onClick="decrementButton"
+                        android:text="6"
                         android:textColor="#fff" />
+
                     <Button
                         android:id="@+id/figure_44"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:background="@drawable/roundbutton"
-                        android:onClick="decrementButton"
-                        android:text="6"
                         android:layout_below="@+id/txtWorkoutExcersis4"
                         android:layout_marginStart="30dp"
                         android:layout_marginTop="10dp"
                         android:layout_toEndOf="@+id/figure_34"
+                        android:background="@drawable/roundbutton"
+                        android:onClick="decrementButton"
+                        android:text="6"
                         android:textColor="#fff" />
 
                     <Button
                         android:id="@+id/figure_54"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:background="@drawable/roundbutton"
-                        android:onClick="decrementButton"
-                        android:text="6"
                         android:layout_below="@+id/txtWorkoutExcersis4"
                         android:layout_marginStart="30dp"
                         android:layout_marginTop="10dp"
                         android:layout_toEndOf="@+id/figure_44"
+                        android:background="@drawable/roundbutton"
+                        android:onClick="decrementButton"
+                        android:text="6"
                         android:textColor="#fff" />
 
                 </RelativeLayout>
@@ -412,7 +417,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.947"
             app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="TextContrastCheck" />
+            tools:ignore="TextContrastCheck"
+            android:onClick="resetWorkOut"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

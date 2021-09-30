@@ -70,7 +70,6 @@ class MainActivity : AppCompatActivity() {
 
 
     fun decrementButton(view: View){
-
             var btnView: Button = view as Button
             var numberString: String = btnView.text as String
             var numberOfReps : Int = numberString.toInt() -1
@@ -78,8 +77,9 @@ class MainActivity : AppCompatActivity() {
                 btnView.text =numberOfReps.toString()
                 btnView.setBackgroundResource(R.drawable.roundbuttonselected)
             }
-
-
+    }
+    fun resetWorkOut(view: View){
+        refreshFragment(WorkOut)
     }
 
 
@@ -87,6 +87,14 @@ class MainActivity : AppCompatActivity() {
         if(fragment !=null){
             val transaction = supportFragmentManager.beginTransaction()
             transaction.replace(R.id.myNavHostFragment, fragment)
+            transaction.commit()
+        }
+    }
+    private fun refreshFragment(fragment: Fragment){
+        if(fragment !=null){
+            val transaction = supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.myNavHostFragment, fragment)
+            transaction.detach(fragment).attach(fragment).commit()
             transaction.commit()
         }
     }
