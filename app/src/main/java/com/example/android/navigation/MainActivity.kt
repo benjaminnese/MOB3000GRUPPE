@@ -25,6 +25,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
@@ -91,12 +92,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
     private fun refreshFragment(fragment: Fragment){
-        if(fragment !=null){
-            val transaction = supportFragmentManager.beginTransaction()
-            transaction.replace(R.id.myNavHostFragment, fragment)
-            transaction.detach(fragment).attach(fragment).commit()
-            transaction.commit()
-        }
+        val transaction = supportFragmentManager
+        transaction.beginTransaction().detach(fragment).attach(fragment).commit()
     }
 
     override fun onSupportNavigateUp(): Boolean {
