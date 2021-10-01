@@ -83,7 +83,6 @@ class MainActivity : AppCompatActivity() {
         refreshFragment(WorkOut)
     }
 
-
     private fun replaceFragment(fragment: Fragment){
         if(fragment !=null){
             val transaction = supportFragmentManager.beginTransaction()
