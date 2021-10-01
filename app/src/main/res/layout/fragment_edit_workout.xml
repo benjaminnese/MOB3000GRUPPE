@@ -1,0 +1,145 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.navigation.EditWorkOut">
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rulesText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:text="Edit workout"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.432"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.026"></TextView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="400dp"
+                android:background="@drawable/background_border"
+                android:padding="15dp"
+                android:paddingVertical="6dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtWorkoutExcersis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="76dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Squat" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtWorkoutExcersis1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="220dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:hint="reps*set" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/figure_1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txtWorkoutExcersis"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundbutton"
+                    android:onClick="decrementButton"
+                    android:text="6"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/figure_2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="37dp"
+                    android:layout_marginTop="65dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/figure_1"
+                    android:background="@drawable/roundbutton"
+                    android:onClick="decrementButton"
+                    android:text="6"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/figure_3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txtWorkoutExcersis"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/figure_2"
+                    android:background="@drawable/roundbutton"
+                    android:onClick="decrementButton"
+                    android:text="6"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/figure_4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txtWorkoutExcersis"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/figure_3"
+                    android:background="@drawable/roundbutton"
+                    android:onClick="decrementButton"
+                    android:text="6"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/figure_5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txtWorkoutExcersis"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/figure_4"
+                    android:background="@drawable/roundbutton"
+                    android:onClick="decrementButton"
+                    android:text="6"
+                    android:textColor="#fff" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+        </LinearLayout>
+
+
+</layout>

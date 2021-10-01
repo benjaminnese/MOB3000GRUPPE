@@ -30,19 +30,19 @@ import com.example.android.navigation.databinding.FragmentWorkoutBinding
 
 class WorkOut : Fragment() {
 
+    private lateinit var binding: FragmentWorkoutBinding
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val binding = DataBindingUtil.inflate<FragmentWorkoutBinding>(
+        binding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_workout, container, false
         )
 
-
         return binding.root
     }
-
 
 
 }

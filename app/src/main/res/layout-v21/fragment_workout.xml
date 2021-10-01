@@ -504,10 +504,13 @@
             <Button
                 android:id="@+id/btnEditWorkout"
                 android:layout_width="123dp"
+
+
                 android:layout_height="55dp"
                 android:layout_marginEnd="11dp"
                 android:layout_marginBottom="14dp"
                 android:text="@string/edit_workout"
+                android:onClick="editWorkOut"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/btnFinishWorkout" />
         </androidx.constraintlayout.widget.ConstraintLayout>

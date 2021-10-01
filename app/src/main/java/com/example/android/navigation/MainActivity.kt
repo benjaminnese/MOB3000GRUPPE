@@ -21,11 +21,9 @@ package com.example.android.navigation
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentTransaction
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
@@ -34,11 +32,10 @@ import androidx.navigation.ui.setupWithNavController
 import com.example.android.navigation.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragment_workout.*
 
 class MainActivity : AppCompatActivity() {
     private val TitleFragment = TitleFragment()
-    private val AboutFragment = AboutFragment()
+    private val AboutFragment = EditWorkOut()
     private val CalenderWorkOutFragment = WorkOutHistory()
     private val WorkOut = WorkOut()
 
@@ -68,7 +65,13 @@ class MainActivity : AppCompatActivity() {
 
 
     }
-
+    private fun replaceFragment(fragment: Fragment){
+        if(fragment !=null){
+            val transaction = supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.myNavHostFragment, fragment)
+            transaction.commit()
+        }
+    }
 
     fun decrementButton(view: View){
             var btnView: Button = view as Button
@@ -79,17 +82,14 @@ class MainActivity : AppCompatActivity() {
                 btnView.setBackgroundResource(R.drawable.roundbuttonselected)
             }
     }
+    fun editWorkOut(view: View){
+        replaceFragment(AboutFragment)
+    }
     fun resetWorkOut(view: View){
         refreshFragment(WorkOut)
     }
 
-    private fun replaceFragment(fragment: Fragment){
-        if(fragment !=null){
-            val transaction = supportFragmentManager.beginTransaction()
-            transaction.replace(R.id.myNavHostFragment, fragment)
-            transaction.commit()
-        }
-    }
+
     private fun refreshFragment(fragment: Fragment){
         val transaction = supportFragmentManager
         transaction.beginTransaction().detach(fragment).attach(fragment).commit()
