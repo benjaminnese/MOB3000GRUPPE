@@ -32,19 +32,20 @@ import androidx.navigation.ui.setupWithNavController
 import com.example.android.navigation.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_title.view.*
 
 class MainActivity : AppCompatActivity() {
     private val TitleFragment = TitleFragment()
     private val AboutFragment = EditWorkOut()
     private val CalenderWorkOutFragment = WorkOutHistory()
     private val WorkOut = WorkOut()
-
+    lateinit var binding: ActivityMainBinding
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         @Suppress("UNUSED_VARIABLE")
-        val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.myNavHostFragment) as NavHostFragment
         val navController = navHostFragment.navController
         (supportActionBar?.hide()) //Gjemmer header title
@@ -72,6 +73,7 @@ class MainActivity : AppCompatActivity() {
             transaction.commit()
         }
     }
+
 
     fun decrementButton(view: View){
             var btnView: Button = view as Button
@@ -102,6 +104,13 @@ class MainActivity : AppCompatActivity() {
     private fun setupBottomNavMenu(navController: NavController) {
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_navigation)
         bottomNav?.setupWithNavController(navController)
+    }
+    //Navbaren er gjemt frem til bruker trykker login
+    fun showNavBar(view: android.view.View) {
+        binding.bottomNavigation.visibility = View.VISIBLE
+        var btnView: Button = view as Button
+        btnView.btnLogIn.visibility = View.INVISIBLE
+        //TODO Fjern registerknappen også
     }
 
 
