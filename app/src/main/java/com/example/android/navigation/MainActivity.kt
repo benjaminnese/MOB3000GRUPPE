@@ -108,8 +108,8 @@ class MainActivity : AppCompatActivity() {
     //Navbaren er gjemt frem til bruker trykker login
     fun showNavBar(view: android.view.View) {
         binding.bottomNavigation.visibility = View.VISIBLE
-        var btnView: Button = view as Button
-        btnView.btnLogIn.visibility = View.INVISIBLE
+        view.visibility = View.GONE
+
         //TODO Fjern registerknappen også
     }
 
