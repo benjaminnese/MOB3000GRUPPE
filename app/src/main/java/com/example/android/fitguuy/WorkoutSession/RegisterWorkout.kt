@@ -90,7 +90,7 @@ class RegisterWorkout : Fragment(), RegisterWorkoutAdapter.ItemClickListener{
 
     private fun insert () {
         Log.i("tets", btnCount1.text.toString().toLong().toString())
-        repository.insert(Workout(btnCount1.text.toString().toLong(),btnCount2.text.toString().toLong(),"lagret trening","123","123"));
+        //repository.insert(Workout(btnCount1.text.toString().toLong(),btnCount2.text.toString().toLong(),"lagret trening","123","123"));
     }
     fun update (workout: Workout){
         repository.update(workout)

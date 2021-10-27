@@ -24,7 +24,8 @@ class HistoryListAdapter(private val clickListener: ItemClickListener)
     override fun onBindViewHolder(holder: HistoryViewHolder, position: Int) {
         var currentWorkout = workoutList.get(position)
         holder.idTextView.setText(currentWorkout.id.toString())
-        holder.dateTextView.setText(currentWorkout.date.toString())
+        holder.dateTextView.setText(currentWorkout.id.toString() )
+        holder.exceriesTextView.setText(currentWorkout.type1)
 
         holder.itemView.setOnClickListener(View.OnClickListener {
             clickListener.onItemClick(

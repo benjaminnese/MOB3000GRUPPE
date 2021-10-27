@@ -8,6 +8,8 @@
         <entry key="..\:/Users/benja/Dropbox/USN/5.SEMESTER/AppMobil/MOB3000GRUPPE/app/src/main/res/drawable-v24/roundbuttonselected.xml" value="0.32685185185185184" />
         <entry key="..\:/Users/benja/Dropbox/USN/5.SEMESTER/AppMobil/MOB3000GRUPPE/app/src/main/res/drawable/frame.xml" value="0.4949074074074074" />
         <entry key="..\:/Users/benja/Dropbox/USN/5.SEMESTER/AppMobil/MOB3000GRUPPE/app/src/main/res/drawable/gradientcolorworkout.xml" value="0.4949074074074074" />
+        <entry key="..\:/Users/benja/Dropbox/USN/5.SEMESTER/AppMobil/MOB3000GRUPPE/app/src/main/res/drawable/ic_baseline_circle_24.xml" value="0.38425925925925924" />
+        <entry key="..\:/Users/benja/Dropbox/USN/5.SEMESTER/AppMobil/MOB3000GRUPPE/app/src/main/res/drawable/roundbuttonselected.xml" value="0.34444444444444444" />
         <entry key="..\:/Users/benja/Dropbox/USN/5.SEMESTER/AppMobil/MOB3000GRUPPE/app/src/main/res/drawable/roundedbuttonlogin.xml" value="0.4949074074074074" />
         <entry key="..\:/Users/benja/Dropbox/USN/5.SEMESTER/AppMobil/MOB3000GRUPPE/app/src/main/res/layout-v21/fragment_workout.xml" value="0.33" />
         <entry key="..\:/Users/benja/Dropbox/USN/5.SEMESTER/AppMobil/MOB3000GRUPPE/app/src/main/res/layout-v21/treningbar.xml" value="0.45416666666666666" />
@@ -40,9 +42,9 @@
         <entry key="..\:/Users/benja/Dropbox/USN/5.SEMESTER/AppMobil/MOB3000GRUPPE/app/src/main/res/layout/fragment_workout2.xml" value="0.48055555555555557" />
         <entry key="..\:/Users/benja/Dropbox/USN/5.SEMESTER/AppMobil/MOB3000GRUPPE/app/src/main/res/layout/fragment_workoutTab1.xml" value="0.34885844748858447" />
         <entry key="..\:/Users/benja/Dropbox/USN/5.SEMESTER/AppMobil/MOB3000GRUPPE/app/src/main/res/layout/fragment_workout_history.xml" value="0.33564814814814814" />
-        <entry key="..\:/Users/benja/Dropbox/USN/5.SEMESTER/AppMobil/MOB3000GRUPPE/app/src/main/res/layout/fragment_workout_history_row.xml" value="0.2777777777777778" />
+        <entry key="..\:/Users/benja/Dropbox/USN/5.SEMESTER/AppMobil/MOB3000GRUPPE/app/src/main/res/layout/fragment_workout_history_row.xml" value="0.25" />
         <entry key="..\:/Users/benja/Dropbox/USN/5.SEMESTER/AppMobil/MOB3000GRUPPE/app/src/main/res/layout/fragment_workout_history_row_detail.xml" value="0.2777777777777778" />
-        <entry key="..\:/Users/benja/Dropbox/USN/5.SEMESTER/AppMobil/MOB3000GRUPPE/app/src/main/res/layout/fragment_workout_landing_page.xml" value="0.11296296296296296" />
+        <entry key="..\:/Users/benja/Dropbox/USN/5.SEMESTER/AppMobil/MOB3000GRUPPE/app/src/main/res/layout/fragment_workout_landing_page.xml" value="0.25" />
         <entry key="..\:/Users/benja/Dropbox/USN/5.SEMESTER/AppMobil/MOB3000GRUPPE/app/src/main/res/layout/fragment_workout_session_row.xml" value="0.2037037037037037" />
         <entry key="..\:/Users/benja/Dropbox/USN/5.SEMESTER/AppMobil/MOB3000GRUPPE/app/src/main/res/layout/fragment_workout_site.xml" value="0.38101851851851853" />
         <entry key="..\:/Users/benja/Dropbox/USN/5.SEMESTER/AppMobil/MOB3000GRUPPE/app/src/main/res/layout/fragment_workout_tab1.xml" value="0.3685185185185185" />

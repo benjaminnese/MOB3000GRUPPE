@@ -7,10 +7,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:background="#00897B"
+        android:background="@drawable/record_label_rounded"
         android:padding="5dp"
         android:paddingVertical="6dp"
-        app:strokeColor="@color/colorPrimary">
+        app:strokeColor="@color/colorPrimary"
+        app:cardCornerRadius="8dp">
 
         <TextView
             android:id="@+id/txtExerciseName"
@@ -62,11 +63,10 @@
             android:layout_below="@+id/txtExerciseName"
             android:layout_alignParentStart="true"
             android:layout_marginTop="10dp"
-
             android:background="@drawable/roundbutton"
             android:onClick="decrementButton"
             android:text="6"
-            android:textColor="@color/design_default_color_primary_dark" />
+            android:textColor="#fff" />
         <Button
             android:id="@+id/figure_2"
             android:layout_width="40dp"

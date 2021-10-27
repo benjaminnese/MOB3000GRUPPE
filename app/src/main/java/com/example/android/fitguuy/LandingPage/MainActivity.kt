@@ -111,13 +111,19 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun decrementButton(view: View){
-            var btnView: Button = view as Button
-            var numberString: String = btnView.text as String
-            var numberOfReps : Int = numberString.toInt() -1
-            if(numberOfReps>=0){
-                btnView.text =numberOfReps.toString()
-                btnView.setBackgroundResource(fitguuy.R.drawable.roundbuttonselected)
-            }
+        var btnView: Button = view as Button
+        var numberString: String = btnView.text as String
+        var numberOfReps : Int = numberString.toInt()
+        numberOfReps = numberString.toInt() - 1
+        if(numberOfReps>=0){
+            btnView.text = numberOfReps.toString()
+            btnView.setBackgroundResource(fitguuy.R.drawable.roundbuttonselected)
+        } else {
+            numberOfReps = numberString.toInt() + 5
+            btnView.text = numberOfReps.toString()
+            btnView.setBackgroundResource(fitguuy.R.drawable.roundbuttonselected)
+        }
+
     }
 
     fun editWorkOut(view: View){

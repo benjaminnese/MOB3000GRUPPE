@@ -15,7 +15,8 @@
             android:id="@+id/recordRecylerView"
 
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnEditWorkout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -23,33 +24,33 @@
 
         </androidx.recyclerview.widget.RecyclerView>
 
-            <Button
-                android:id="@+id/btnFinishWorkout"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="17dp"
-                android:layout_marginBottom="16dp"
-                android:background="#FCEF0D"
-                android:onClick="resetWorkOut"
-                android:text="@string/finish"
-                android:textColor="#000000"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                tools:ignore="TextContrastCheck" />
+        <Button
+            android:id="@+id/btnFinishWorkout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="17dp"
+            android:layout_marginBottom="16dp"
+            android:background="#FCEF0D"
+            android:onClick="resetWorkOut"
+            android:text="@string/finish"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="TextContrastCheck" />
 
-            <Button
-                android:id="@+id/btnEditWorkout"
-                android:layout_width="123dp"
+        <Button
+            android:id="@+id/btnEditWorkout"
+            android:layout_width="123dp"
 
 
-                android:layout_height="55dp"
-                android:layout_marginEnd="11dp"
-                android:layout_marginBottom="14dp"
-                android:onClick="editWorkOut"
-                android:text="@string/edit_workout"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/btnFinishWorkout" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_height="55dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="14dp"
+            android:onClick="editWorkOut"
+            android:text="@string/edit_workout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnFinishWorkout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
