@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/gradientcolorworkout"
+        android:padding="15dp"
+        android:paddingVertical="6dp">
+
+        <TextView
+            android:id="@+id/txtWorkoutExcersis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:text="Squat"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnWorkoutSet1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txtWorkoutExcersis"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundbutton"
+            android:onClick="decrementButton"
+            android:text="6"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btnWorkoutSet2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/btnWorkoutSet1"
+            android:background="@drawable/roundbutton"
+            android:onClick="decrementButton"
+            android:text="6"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btnWorkoutSet3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txtWorkoutExcersis"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/btnWorkoutSet2"
+            android:background="@drawable/roundbutton"
+            android:onClick="decrementButton"
+            android:text="6"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btnWorkoutSet4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txtWorkoutExcersis"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/btnWorkoutSet3"
+            android:background="@drawable/roundbutton"
+            android:onClick="decrementButton"
+            android:text="6"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btnWorkoutSet5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txtWorkoutExcersis"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/btnWorkoutSet4"
+            android:background="@drawable/roundbutton"
+            android:onClick="decrementButton"
+            android:text="6"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+</LinearLayout>

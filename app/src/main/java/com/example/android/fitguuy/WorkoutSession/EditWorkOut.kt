@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.navigation
+package com.example.android.fitguuy.WorkoutSession
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -22,12 +22,22 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import com.example.android.navigation.databinding.FragmentEditWorkoutBinding
+import androidx.fragment.app.FragmentPagerAdapter
+import androidx.viewpager.widget.ViewPager
+import com.example.android.fitguuy.EditWorkoutAdapter
+import com.google.android.material.tabs.TabLayout
+import fitguuy.R
+import fitguuy.databinding.FragmentEditWorkoutBinding
+
 
 // test
 class EditWorkOut : Fragment() {
 
     private lateinit var binding: FragmentEditWorkoutBinding
+
+    private lateinit var tabLayout: TabLayout
+    private lateinit var viewPager: ViewPager
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -37,6 +47,18 @@ class EditWorkOut : Fragment() {
         binding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_edit_workout, container, false
         )
+        tabLayout = binding.tablayout
+        viewPager = binding.viewpager
+
+        tabLayout.setupWithViewPager(viewPager, true)
+
+        val editWorkoutAdatper = EditWorkoutAdapter(
+            childFragmentManager,
+            FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT)
+
+        editWorkoutAdatper.addFragment(WorkoutTab1(), "Workout1")
+        editWorkoutAdatper.addFragment(WorkoutTab2(), "Workout2")
+        viewPager.adapter = editWorkoutAdatper
 
         return binding.root
     }

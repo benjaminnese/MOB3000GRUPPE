@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "267761968514",
+    "project_id": "workoutapp-44a2c",
+    "storage_bucket": "workoutapp-44a2c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267761968514:android:4063b710539c454636db9b",
+        "android_client_info": {
+          "package_name": "com.example.android.firebaseui_login_sample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267761968514-1373376mosfmt8ij0cod470hkqafsn8k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqetpPlC9evIsy3q8njz3-ln4K1aYdkYU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "267761968514-1373376mosfmt8ij0cod470hkqafsn8k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267761968514:android:3255b9390b667c9036db9b",
+        "android_client_info": {
+          "package_name": "com.fitguuygroup.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267761968514-1373376mosfmt8ij0cod470hkqafsn8k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqetpPlC9evIsy3q8njz3-ln4K1aYdkYU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "267761968514-1373376mosfmt8ij0cod470hkqafsn8k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

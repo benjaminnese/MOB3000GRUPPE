@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.navigation
+package com.example.android.fitguuy.LandingPage
 
 // Test git
 
@@ -24,22 +24,36 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
-import androidx.navigation.ui.setupWithNavController
-import com.example.android.navigation.databinding.ActivityMainBinding
-import com.google.android.material.bottomnavigation.BottomNavigationView
+import fitguuy.R
+import fitguuy.databinding.ActivityMainBinding
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragment_title.view.*
+import com.google.firebase.auth.FirebaseUser
+import android.widget.Toast
+
+import android.content.Intent
+import com.example.android.fitguuy.Autenfication.GoogleSignInActivity
+import com.example.android.fitguuy.Autenfication.SigninWelcomePage
+import com.example.android.fitguuy.Autenfication.SignupFragment
+import com.example.android.fitguuy.Autenfication.TitleFragment
+import com.example.android.fitguuy.WorkoutHistory.HistoryFragment
+import com.example.android.fitguuy.WorkoutHistory.HistoryActivity
+import com.example.android.fitguuy.WorkoutSession.EditWorkOut
+import com.example.android.fitguuy.WorkoutSession.RegisterWorkout
+
 
 class MainActivity : AppCompatActivity() {
+
     private val TitleFragment = TitleFragment()
-    private val AboutFragment = EditWorkOut()
-    private val CalenderWorkOutFragment = WorkOutHistory()
-    private val WorkOut = WorkOut()
+    private val EditWorkout = EditWorkOut()
+    private val WorkoutHistoryFragment = HistoryFragment()
+    private val WorkOutSite = RegisterWorkout()
+    private val SignupFragment = SignupFragment()
+    private val SigninWelcomePage = SigninWelcomePage()
     lateinit var binding: ActivityMainBinding
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -57,23 +71,42 @@ class MainActivity : AppCompatActivity() {
         bottom_navigation.setOnNavigationItemSelectedListener{
             when(it.itemId){
                 R.id.homeScreen ->replaceFragment(TitleFragment)
-                R.id.workoutScreen ->replaceFragment(WorkOut)
-                R.id.workoutHistory -> replaceFragment(CalenderWorkOutFragment)
+                R.id.workoutScreen ->replaceFragment(WorkOutSite)
+                R.id.workoutHistory -> startNewActivity()
                 //R.id.aboutApp -> replaceFragment(AboutFragment)
             }
             true
         }
 
 
+
     }
+    private fun startNewActivity(){
+        val intent = Intent(this, HistoryActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun updateUI(account: FirebaseUser?) {
+        if (account != null) {
+            Toast.makeText(this, "You Signed In successfully", Toast.LENGTH_LONG).show()
+            replaceFragment(SigninWelcomePage)
+        } else {
+            Toast.makeText(this, "You Didnt signed in", Toast.LENGTH_LONG).show()
+        }
+    }
+
+
     private fun replaceFragment(fragment: Fragment){
-        if(fragment !=null){
+        if(fragment == WorkoutHistoryFragment){
+            val transaction = supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.myNavHostFragment, fragment, "workout_history")
+            transaction.commit()
+        }else{
             val transaction = supportFragmentManager.beginTransaction()
             transaction.replace(R.id.myNavHostFragment, fragment)
             transaction.commit()
         }
     }
-
 
     fun decrementButton(view: View){
             var btnView: Button = view as Button
@@ -81,16 +114,23 @@ class MainActivity : AppCompatActivity() {
             var numberOfReps : Int = numberString.toInt() -1
             if(numberOfReps>=0){
                 btnView.text =numberOfReps.toString()
-                btnView.setBackgroundResource(R.drawable.roundbuttonselected)
+                btnView.setBackgroundResource(fitguuy.R.drawable.roundbuttonselected)
             }
     }
+
     fun editWorkOut(view: View){
-        replaceFragment(AboutFragment)
+        replaceFragment(EditWorkout)
     }
     fun resetWorkOut(view: View){
-        refreshFragment(WorkOut)
-    }
 
+        refreshFragment(WorkOutSite)
+    }
+    fun register(view: View){
+        replaceFragment(SignupFragment)
+    }
+    fun signin(view: View){
+        replaceFragment(TitleFragment)
+    }
 
     private fun refreshFragment(fragment: Fragment){
         val transaction = supportFragmentManager
@@ -101,28 +141,24 @@ class MainActivity : AppCompatActivity() {
         val navController = this.findNavController(R.id.myNavHostFragment)
         return navController.navigateUp()
     }
-    private fun setupBottomNavMenu(navController: NavController) {
-        val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_navigation)
-        bottomNav?.setupWithNavController(navController)
-    }
+//    private fun setupBottomNavMenu(navController: NavController) {
+//        val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_navigation)
+//        bottomNav?.setupWithNavController(navController)
+//    }
     //Navbaren er gjemt frem til bruker trykker login
+
+
     fun showNavBar(view: android.view.View) {
         binding.bottomNavigation.visibility = View.VISIBLE
         view.visibility = View.GONE
 
         //TODO Fjern registerknappen også
     }
+    fun googleLogin(view: android.view.View){
+        val intent = Intent(this, GoogleSignInActivity::class.java)
+        startActivity(intent)
+    }
 
-
-    // TODO (01) Create the new TitleFragment
-    // Select File->New->Fragment->Fragment (Blank)
-
-    // TODO (02) Clean up the new TitleFragment
-    // In our new TitleFragment
-
-    // TODO (03) Use DataBindingUtil.inflate to inflate and return the titleFragment in onCreateView
-    // In our new TitleFragment
-    // R.layout.fragment_title
 
 
 }

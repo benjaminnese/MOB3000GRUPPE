@@ -1,0 +1,21 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:visibility="visible"
+    tools:visibility="visible">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.fitguuy.Autenfication.GoogleSignInActivity"
+    android:id="@+id/logInGoogle">
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btnSignIn"
+        app:buttonSize="icon_only"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        app:colorScheme="dark"
+        android:onClick="googleLogin"
+         />
+
+</FrameLayout>
+</layout>
