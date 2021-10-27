@@ -20,6 +20,7 @@ import com.example.android.fitguuy.database.WorkoutDatabase
 import com.example.android.fitguuy.database.WorkoutDatabaseDao
 import fitguuy.R
 import fitguuy.databinding.FragmentRecordBinding
+
 import kotlinx.coroutines.launch
 
 

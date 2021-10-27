@@ -31,8 +31,8 @@
 
         <LinearLayout
             android:id="@+id/linearLayout"
-            android:layout_width="622dp"
-            android:layout_height="1091dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:background="#B94244"
             android:orientation="vertical">
 

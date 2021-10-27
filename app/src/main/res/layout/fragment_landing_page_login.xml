@@ -89,27 +89,30 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:paddingTop="120dp">
+                    android:paddingTop="50dp"
+                    >
 
                     <TextView
                         android:id="@+id/textView3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
-                        android:text="Sign Up "
                         android:onClick="register"
+                        android:text="Sign Up "
                         android:textColor="#FCEF0D" />
 
                     <TextView
                         android:id="@+id/textView4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:padding="5dp"
                         android:layout_gravity="center_vertical"
+                        android:padding="5dp"
                         android:text="or login with "
                         android:textColor="#B3A7A7" />
 
-                    <include layout="@layout/fragment_sign_in" />
+                    <include
+                        layout="@layout/fragment_sign_in"
+                        android:layout_height="86dp" />
 
 
                 </LinearLayout>
