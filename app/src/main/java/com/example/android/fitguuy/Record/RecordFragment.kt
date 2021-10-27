@@ -14,6 +14,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.android.fitguuy.Repository.TempRepositoy
 import com.example.android.fitguuy.database.Exercise
 import com.example.android.fitguuy.database.Workout
 import com.example.android.fitguuy.database.WorkoutDatabase
@@ -32,7 +33,7 @@ class RecordFragment : Fragment() {
 
     private lateinit var recordRecyclerView: RecyclerView
     private lateinit var _binding: FragmentRecordBinding
-
+    private lateinit var repository: TempRepositoy
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding
@@ -68,6 +69,7 @@ class RecordFragment : Fragment() {
         })
         recordViewModel.lastWorkout.observe(viewLifecycleOwner, Observer{
             if (it != null) {
+                recordAdapter.setWorkout(it)
                 recordAdapter.lastWorkout = it
             }
         })
@@ -76,6 +78,7 @@ class RecordFragment : Fragment() {
             layoutManager = linLayoutMgr
             adapter = recordAdapter
         }
+          repository = TempRepositoy(requireActivity().application)
         binding.btnFinishWorkout.setOnClickListener{
             //val exerciseCount = recordAdapter.listItemsHolder.size
             var i = 0
@@ -129,8 +132,9 @@ class RecordFragment : Fragment() {
          */
         dataSource.let { database ->
             scope.launch { //deleteAll(database)
-             populateDatabase(database)
-               // deleteAll(database)
+//                deleteAll(database)
+//            populateDatabase(database)
+
             }
         }
         return root
@@ -158,6 +162,7 @@ class RecordFragment : Fragment() {
         newWorkout.type6 = list[5].exerciseName.text.toString()
         newWorkout.reps6 = list[5].button1.text.toString()
         newWorkout.weight6 = list[5].currentWeight.text.toString()
+        repository.insert(Workout(0, 2020,newWorkout.type1, newWorkout.reps1,"","lagret trening","123","123","","","","","","","","","","","",""));
         return newWorkout
     }
     fun getDataFromView(list:MutableList<RelativeLayout>) : Workout {
@@ -193,7 +198,7 @@ class RecordFragment : Fragment() {
             //Legg til eksempler på ord
             Log.i("RecordFragment5", "populateDatabase kjørt")
             var exercise = Exercise()
-            val exercises = listOf("Benkpress","Knebøy","Markløft","Roing","Nedtrekk","Biceps curl","test","test1")
+            val exercises = listOf("Benkpress","Knebøy","Markløft","Roing","Nedtrekk","Biceps curl")
             exercises.forEach {
                 exercise.partOfName = "default"
                 exercise.name = it

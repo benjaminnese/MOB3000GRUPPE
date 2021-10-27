@@ -19,11 +19,10 @@ open class HistoryViewModel(application: Application) : AndroidViewModel(applica
    init{
        repository = TempRepositoy(application)
        allWorkouts = repository.allWorkout
-
    }
-//    fun insert (workout: Workout){
-//        repository.insert(workout)
-//    }
+    fun insert (workout: Workout){
+        repository.insert(workout)
+    }
     fun update (workout: Workout){
         repository.update(workout)
     }

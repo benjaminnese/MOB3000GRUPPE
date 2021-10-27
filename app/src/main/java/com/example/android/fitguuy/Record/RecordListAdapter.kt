@@ -17,7 +17,7 @@ class RecordListAdapter: ListAdapter<Exercise, RecordListAdapter.RecordViewHolde
 
     var lastWorkout: Workout = Workout()
     var listItemsHolder: MutableList<RecordViewHolder> = arrayListOf()
-
+    var  workoutList: ArrayList<Workout> = ArrayList()
     class WorkoutInDbDiffCallback : DiffUtil.ItemCallback<Exercise>() {
         override fun areItemsTheSame(oldItem: Exercise, newItem: Exercise): Boolean {
             return oldItem.id == newItem.id
@@ -34,6 +34,11 @@ class RecordListAdapter: ListAdapter<Exercise, RecordListAdapter.RecordViewHolde
         viewType: Int
     ): RecordViewHolder {
         return RecordViewHolder.from(parent)
+    }
+
+    public fun setWorkout(workout: Workout){
+        this.workoutList.add(workout)
+        notifyDataSetChanged()
     }
 
     override fun onBindViewHolder(holder: RecordViewHolder, position: Int) {
