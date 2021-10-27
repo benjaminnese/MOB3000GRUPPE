@@ -317,7 +317,7 @@ class RecordFragment : Fragment() {
         suspend fun deleteAll(workoutDatabaseDao: WorkoutDatabaseDao) {
             workoutDatabaseDao.deleteAllWor()
             workoutDatabaseDao.deleteAllEx()
-            workoutDatabaseDao.clearETab()
+            //workoutDatabaseDao.clearETab()
             workoutDatabaseDao.clearWTab()
         }
     }

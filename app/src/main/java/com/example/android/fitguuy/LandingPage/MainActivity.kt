@@ -32,7 +32,7 @@ import androidx.navigation.ui.NavigationUI
 import com.example.android.fitguuy.Autenfication.GoogleSignInActivity
 import com.example.android.fitguuy.Autenfication.SigninWelcomePage
 import com.example.android.fitguuy.Autenfication.SignupFragment
-import com.example.android.fitguuy.Autenfication.TitleFragment
+import com.example.android.fitguuy.Autenfication.LandingPageLoginFragment
 import com.example.android.fitguuy.Record.RecordFragment
 import com.example.android.fitguuy.WorkoutHistory.HistoryFragmentContainer
 import com.example.android.fitguuy.WorkoutHistory.HistoryFragment
@@ -46,7 +46,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    private val TitleFragment = TitleFragment()
+    private val TitleFragment = LandingPageLoginFragment()
     private val EditWorkout = EditWorkOut()
     private val HistoryFragment = HistoryFragment()
     private val WorkOutSite = RegisterWorkout()

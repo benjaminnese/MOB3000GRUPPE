@@ -19,7 +19,7 @@ import fitguuy.R
 import fitguuy.databinding.FragmentLandingPageLoginBinding
 
 
-class TitleFragment : Fragment() {
+class LandingPageLoginFragment : Fragment() {
     private lateinit var mAuth: FirebaseAuth
     private lateinit var email: EditText
     private lateinit var editPassword: EditText
