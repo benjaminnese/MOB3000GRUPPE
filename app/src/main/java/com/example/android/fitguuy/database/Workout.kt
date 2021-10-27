@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "workout_history_table")
 
-data class Workout (
+data class Workout(
 
     @PrimaryKey(autoGenerate = true)
     val id: Long = 0,

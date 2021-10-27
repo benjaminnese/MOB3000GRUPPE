@@ -110,9 +110,7 @@
                         android:text="or login with "
                         android:textColor="#B3A7A7" />
 
-                    <include
-                        layout="@layout/fragment_sign_in"
-                        android:layout_height="86dp" />
+
 
 
                 </LinearLayout>

@@ -10,7 +10,8 @@
         android:background="#00897B"
         android:padding="5dp"
         android:paddingVertical="6dp"
-        app:strokeColor="@color/colorPrimary">
+        app:strokeColor="@color/colorPrimary"
+        app:cardCornerRadius="8dp">
 
         <TextView
             android:id="@+id/txtExerciseName"

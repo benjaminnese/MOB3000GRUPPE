@@ -162,7 +162,7 @@ class RecordFragment : Fragment() {
         newWorkout.type6 = list[5].exerciseName.text.toString()
         newWorkout.reps6 = list[5].button1.text.toString()
         newWorkout.weight6 = list[5].currentWeight.text.toString()
-        repository.insert(Workout(0, 2020,newWorkout.type1, newWorkout.reps1,"","lagret trening","123","123","","","","","","","","","","","",""));
+        repository.insert(Workout(0, 2020,newWorkout.type1, newWorkout.reps1,newWorkout.weight1,"lagret trening","123","123","","","","","","","","","","","",""));
         return newWorkout
     }
     fun getDataFromView(list:MutableList<RelativeLayout>) : Workout {
@@ -317,7 +317,7 @@ class RecordFragment : Fragment() {
         suspend fun deleteAll(workoutDatabaseDao: WorkoutDatabaseDao) {
             workoutDatabaseDao.deleteAllWor()
             workoutDatabaseDao.deleteAllEx()
-            workoutDatabaseDao.clearETab()
+
             workoutDatabaseDao.clearWTab()
         }
     }
