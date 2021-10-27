@@ -4,7 +4,6 @@ import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.android.fitguuy.WorkoutSession.RegisterWorkoutViewModel
-import java.lang.IllegalArgumentException
 
 class RegisterWorkoutFactory (
     private val application: Application

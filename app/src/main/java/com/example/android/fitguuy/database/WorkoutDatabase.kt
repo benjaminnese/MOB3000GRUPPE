@@ -1,19 +1,11 @@
 package com.example.android.fitguuy.database
-import android.content.Context
-import androidx.lifecycle.lifecycleScope
-import androidx.room.Database
-import androidx.room.Room
-import androidx.room.RoomDatabase
-import androidx.room.TypeConverter
 
-import java.util.*
-import androidx.room.TypeConverters
+import android.content.Context
+import androidx.room.*
 import androidx.sqlite.db.SupportSQLiteDatabase
-import androidx.lifecycle.lifecycleScope
-import com.firebase.ui.auth.data.model.User
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
-import java.lang.Exception
+import java.util.*
 
 
 @Database(entities = [Workout::class,  Exercise::class], version = 2, exportSchema = false)
@@ -41,6 +33,26 @@ abstract class WorkoutDatabase : RoomDatabase() {
                     )
                         .allowMainThreadQueries()
                         .addCallback(WorkoutDatabaseCallback(scope))
+                        .fallbackToDestructiveMigration()
+                        .build()
+                    INSTANCE = instance
+                }
+
+                return instance
+            }
+
+        }
+        fun getInstance(context: Context): WorkoutDatabase {
+            synchronized(this) {
+                var instance = INSTANCE
+
+                if (instance == null) {
+                    instance = Room.databaseBuilder(
+                        context.applicationContext,
+                        WorkoutDatabase::class.java,
+                        "fiitguuy_database"
+                    )
+                        .allowMainThreadQueries()
                         .fallbackToDestructiveMigration()
                         .build()
                     INSTANCE = instance

@@ -1,7 +1,6 @@
 package com.example.android.fitguuy.WorkoutHistory
 
 import android.app.Application
-import android.os.Bundle
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import com.example.android.fitguuy.Repository.TempRepositoy

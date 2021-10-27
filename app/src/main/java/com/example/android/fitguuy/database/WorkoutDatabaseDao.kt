@@ -1,17 +1,21 @@
 package com.example.android.fitguuy.database
 
 import androidx.lifecycle.LiveData
-import androidx.room.*
+import androidx.room.Dao
+import androidx.room.Insert
+import androidx.room.Query
+import androidx.room.Update
 
 
 @Dao
 interface WorkoutDatabaseDao {
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun insert(workout: Workout)
 
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun insert(exercise: Exercise)
 
+    @Insert()
+     fun insert(exercise: Exercise)
+
+    @Insert()
+     fun insert(workout: Workout)
 
     @Update
      fun update(workout: Workout)

@@ -2,22 +2,23 @@ package com.example.android.fitguuy.WorkoutSession
 
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.android.fitguuy.RegisterWorkoutAdapter
 import com.example.android.fitguuy.Repository.TempRepositoy
-import com.example.android.fitguuy.WorkoutHistory.*
+import com.example.android.fitguuy.WorkoutHistory.HistoryDetailFragment
+import com.example.android.fitguuy.WorkoutHistory.HistoryFragment
+import com.example.android.fitguuy.WorkoutHistory.RegisterWorkoutFactory
 import com.example.android.fitguuy.database.Workout
 import com.example.android.fitguuy.database.WorkoutDatabase
 import fitguuy.R
-
 
 
 class RegisterWorkout : Fragment(), RegisterWorkoutAdapter.ItemClickListener{
@@ -37,7 +38,7 @@ class RegisterWorkout : Fragment(), RegisterWorkoutAdapter.ItemClickListener{
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_workout_history, container, false)
+        val view = inflater.inflate(R.layout.fragment_record, container, false)
         database = WorkoutDatabase.getInstance(this.requireContext(), viewLifecycleOwner.lifecycleScope)
 
         initRecyclerView(view)
@@ -57,7 +58,7 @@ class RegisterWorkout : Fragment(), RegisterWorkoutAdapter.ItemClickListener{
         return view
     }
     private fun initRecyclerView(view: View) {
-        val recyclerView: RecyclerView = view.findViewById(R.id.recyclerView)
+        val recyclerView: RecyclerView = view.findViewById(R.id.recordRecylerView)
         val layoutManager = LinearLayoutManager(requireActivity())
         recyclerView.layoutManager = layoutManager
 

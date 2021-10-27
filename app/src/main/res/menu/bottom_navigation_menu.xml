@@ -12,7 +12,7 @@
         android:icon="@drawable/ic_baseline_add_24"
         android:title="@string/text_label_2"/>
     <item
-        android:id="@+id/workoutHistory"
+        android:id="@+id/historyFragment"
         android:title="@string/item3"
         android:icon="@drawable/ic_baseline_history_24"
 

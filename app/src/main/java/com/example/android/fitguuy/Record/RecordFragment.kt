@@ -1,4 +1,6 @@
 package com.example.android.fitguuy.Record
+
+
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -7,9 +9,9 @@ import android.view.ViewGroup
 import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.android.fitguuy.database.Exercise
@@ -18,9 +20,7 @@ import com.example.android.fitguuy.database.WorkoutDatabase
 import com.example.android.fitguuy.database.WorkoutDatabaseDao
 import fitguuy.R
 import fitguuy.databinding.FragmentRecordBinding
-
 import kotlinx.coroutines.launch
-
 
 
 class RecordFragment : Fragment() {
@@ -78,7 +78,7 @@ class RecordFragment : Fragment() {
         binding.saveButton.setOnClickListener{
             //val exerciseCount = recordAdapter.listItemsHolder.size
             var i = 0
-            while (i<6) {
+            while (i<1) {
                 Log.i("RecordFragment",
                     "Løkke: ${
                         recordAdapter.listItemsHolder[i].exerciseName.text.toString()

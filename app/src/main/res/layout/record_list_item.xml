@@ -2,22 +2,8 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <data>
-        <variable
-            name="exercise"
-            type="com.example.android.fitguuy.database.Workout" />
-    </data>
 
-    <com.google.android.material.card.MaterialCardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:clickable="true"
-        app:cardBackgroundColor="#6E6E6E"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="8dp"
-        app:contentPadding="5dp"
-        app:strokeColor="@color/colorPrimary">
+
 
         <RelativeLayout
             android:id="@+id/relLayoutRecord"
@@ -136,7 +122,5 @@
 
         </RelativeLayout>
 
-
-    </com.google.android.material.card.MaterialCardView>
 </layout>
 

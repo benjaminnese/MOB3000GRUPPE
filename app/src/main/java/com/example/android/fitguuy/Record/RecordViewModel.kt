@@ -2,7 +2,10 @@ package com.example.android.fitguuy.Record
 
 import android.app.Application
 import android.util.Log
-import androidx.lifecycle.*
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.example.android.fitguuy.database.Exercise
 import com.example.android.fitguuy.database.Workout
 import com.example.android.fitguuy.database.WorkoutDatabaseDao

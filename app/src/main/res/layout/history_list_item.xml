@@ -2,11 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <data>
-        <variable
-            name="workout"
-            type="com.example.android.fitguuy.database.WorkoutDatabase" />
-    </data>
+
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
@@ -32,7 +28,6 @@
 
                 <TextView
                     android:id="@+id/text_day_of_week"
-                    android:transitionName="transformation_text_day_of_the_week"
                     android:layout_width="160dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -40,32 +35,29 @@
 
                 <TextView
                     android:id="@+id/text_date"
-                    android:transitionName="transformation_text_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Date"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                    />
 
             </LinearLayout>
 
             <TextView
                 android:id="@+id/text_exercise_type"
-                android:transitionName="transformation_exercise_type"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView" />
 
             <TextView
                 android:id="@+id/text_exercise_reps"
-                android:transitionName="transformation_text_exercise_reps"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView" />
 
             <TextView
                 android:id="@+id/text_exercise_weight"
-                android:transitionName="transformation_text_exercise_weight"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView" />

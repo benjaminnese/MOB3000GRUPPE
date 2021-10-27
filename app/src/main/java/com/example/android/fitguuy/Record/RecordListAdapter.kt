@@ -41,7 +41,7 @@ class RecordListAdapter: ListAdapter<Exercise, RecordListAdapter.RecordViewHolde
         listItemsHolder.add(holder)
 
         //holder.
-        holder.lastWeight.text = lastWorkout!!.weight1
+        holder.lastWeight.text = lastWorkout.weight1
         holder.exerciseName.text = exercise.name
         Log.i("RecordListAdapter", "OnBindView: ${ holder.exerciseName.text.toString() }")
         listItemsHolder.add(holder)

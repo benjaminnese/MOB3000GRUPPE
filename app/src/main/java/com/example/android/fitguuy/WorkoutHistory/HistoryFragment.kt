@@ -1,19 +1,3 @@
-/*
- * Copyright 2018, The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package com.example.android.fitguuy.WorkoutHistory
 
 import android.os.Bundle
@@ -49,7 +33,7 @@ class HistoryFragment : Fragment(), HistoryListAdapter.ItemClickListener {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_workout_history, container, false)
+        val view = inflater.inflate(R.layout.fragment_history_workout, container, false)
         database = WorkoutDatabase.getInstance(this.requireContext(),viewLifecycleOwner.lifecycleScope)
         buildListData()
         initRecyclerView(view)
@@ -88,7 +72,7 @@ class HistoryFragment : Fragment(), HistoryListAdapter.ItemClickListener {
         val fragment: Fragment = HistoryDetailFragment.newInstance(workout)
         val transaction = requireActivity().supportFragmentManager.beginTransaction()
         // transaction.replace(R.id.frame_container, fragment, "detail_fragment");
-        transaction.hide(requireActivity().supportFragmentManager.findFragmentByTag("workout_history")!!)
+        transaction.hide(requireActivity().supportFragmentManager.findFragmentByTag("history_workout")!!)
         transaction.add(R.id.frame_container, fragment)
         transaction.addToBackStack(null)
         transaction.commit()

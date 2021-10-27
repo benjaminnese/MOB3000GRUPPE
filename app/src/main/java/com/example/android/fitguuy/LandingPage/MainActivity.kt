@@ -18,38 +18,39 @@ package com.example.android.fitguuy.LandingPage
 
 // Test git
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
-import fitguuy.R
-import fitguuy.databinding.ActivityMainBinding
-import kotlinx.android.synthetic.main.activity_main.*
-import com.google.firebase.auth.FirebaseUser
-import android.widget.Toast
-
-import android.content.Intent
 import com.example.android.fitguuy.Autenfication.GoogleSignInActivity
 import com.example.android.fitguuy.Autenfication.SigninWelcomePage
 import com.example.android.fitguuy.Autenfication.SignupFragment
 import com.example.android.fitguuy.Autenfication.TitleFragment
-import com.example.android.fitguuy.WorkoutHistory.HistoryFragment
+import com.example.android.fitguuy.Record.RecordFragment
 import com.example.android.fitguuy.WorkoutHistory.HistoryActivity
+import com.example.android.fitguuy.WorkoutHistory.HistoryFragment
 import com.example.android.fitguuy.WorkoutSession.EditWorkOut
 import com.example.android.fitguuy.WorkoutSession.RegisterWorkout
+import com.google.firebase.auth.FirebaseUser
+import fitguuy.R
+import fitguuy.databinding.ActivityMainBinding
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity() {
 
     private val TitleFragment = TitleFragment()
     private val EditWorkout = EditWorkOut()
-    private val WorkoutHistoryFragment = HistoryFragment()
+    private val HistoryFragment = HistoryFragment()
     private val WorkOutSite = RegisterWorkout()
+    private val recordFragment = RecordFragment()
     private val SignupFragment = SignupFragment()
     private val SigninWelcomePage = SigninWelcomePage()
     lateinit var binding: ActivityMainBinding
@@ -71,8 +72,8 @@ class MainActivity : AppCompatActivity() {
         bottom_navigation.setOnNavigationItemSelectedListener{
             when(it.itemId){
                 R.id.homeScreen ->replaceFragment(TitleFragment)
-                R.id.workoutScreen ->replaceFragment(WorkOutSite)
-                R.id.workoutHistory -> startNewActivity()
+                R.id.workoutScreen ->replaceFragment(recordFragment)
+                R.id.historyFragment -> startNewActivity()
                 //R.id.aboutApp -> replaceFragment(AboutFragment)
             }
             true
@@ -97,9 +98,9 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun replaceFragment(fragment: Fragment){
-        if(fragment == WorkoutHistoryFragment){
+        if(fragment ==HistoryFragment){
             val transaction = supportFragmentManager.beginTransaction()
-            transaction.replace(R.id.myNavHostFragment, fragment, "workout_history")
+            transaction.replace(R.id.myNavHostFragment, fragment, "history_workout")
             transaction.commit()
         }else{
             val transaction = supportFragmentManager.beginTransaction()

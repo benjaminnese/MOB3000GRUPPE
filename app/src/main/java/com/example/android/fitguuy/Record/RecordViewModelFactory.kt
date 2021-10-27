@@ -5,8 +5,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.android.fitguuy.database.WorkoutDatabaseDao
 
-import java.lang.IllegalArgumentException
-
 
 class RecordViewModelFactory(
     private val dataSource: WorkoutDatabaseDao,

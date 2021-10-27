@@ -3,7 +3,6 @@ package com.example.android.fitguuy.WorkoutHistory
 import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import java.lang.IllegalArgumentException
 
 class HistoryViewModelFactory (
     private val application: Application

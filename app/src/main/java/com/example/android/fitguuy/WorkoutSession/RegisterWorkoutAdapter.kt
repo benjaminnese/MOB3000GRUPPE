@@ -1,5 +1,6 @@
 package com.example.android.fitguuy
 
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -7,9 +8,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.android.fitguuy.database.Workout
 import fitguuy.R
-
-
-import kotlin.collections.ArrayList
 
 class RegisterWorkoutAdapter(view: View, private val clickListener: RegisterWorkoutAdapter.ItemClickListener) :
     RecyclerView.Adapter<RegisterWorkoutAdapter.RegisterWorkoutHolder>() {

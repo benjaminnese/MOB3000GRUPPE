@@ -1,14 +1,13 @@
 package com.example.android.fitguuy.WorkoutSession
 
 import android.os.Bundle
-import android.view.*
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import fitguuy.R
-
-
 
 
 class WorkoutTab1 : Fragment() {

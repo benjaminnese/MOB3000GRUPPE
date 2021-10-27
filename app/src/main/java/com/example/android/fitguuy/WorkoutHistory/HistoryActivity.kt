@@ -12,7 +12,7 @@ class HistoryActivity : AppCompatActivity() {
         setContentView(R.layout.activity_workout_history)
         val fragment: Fragment = HistoryFragment.newInstance()
         val transaction = supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.frame_container, fragment, "workout_history")
+        transaction.replace(R.id.frame_container, fragment, "history_workout")
         transaction.commit()
     }
 }
