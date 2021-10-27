@@ -33,22 +33,22 @@
     <string name="item3">Item</string>
     <string name="titleHomeScreen">FitGuuy</string>
     <string name="imagedesp">heu</string>
-    <string name="finish">Finish</string>
-    <string name="edit_workout">Edit Workout</string>
+    <string name="finish">Registrer</string>
+    <string name="edit_workout">Rediger</string>
     <string name="test1">test1</string>
     <string name="hello">Hello</string>
     <string name="title_activity_edit_workout">EditWorkoutA</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
     <!-- Strings related to login -->
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
+    <string name="prompt_email">E-post</string>
+    <string name="prompt_password">Passord</string>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome!"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
+    <string name="welcome">Velkommen!</string>
+    <string name="invalid_username">Brukernavnet er ikke godkjent</string>
+    <string name="invalid_password">Passordet må være >5 tegn</string>
+    <string name="login_failed">"Innlogging feilet"</string>
     <string name="default_web_client_id1">"495370301328-cffggltk2tljhq626mvrt2jb9osbp5rb.apps.googleusercontent.com"</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
