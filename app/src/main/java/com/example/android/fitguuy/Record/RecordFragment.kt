@@ -75,7 +75,7 @@ class RecordFragment : Fragment() {
             layoutManager = linLayoutMgr
             adapter = recordAdapter
         }
-        binding.saveButton.setOnClickListener{
+        binding.btnFinishWorkout.setOnClickListener{
             //val exerciseCount = recordAdapter.listItemsHolder.size
             var i = 0
             while (i<1) {

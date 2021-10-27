@@ -21,7 +21,7 @@ package="fitguuy">
         </intent-filter>
 
     </activity>
-    <activity  android:name="com.example.android.fitguuy.WorkoutHistory.HistoryActivity"/>
+    <activity  android:name="com.example.android.fitguuy.WorkoutHistory.HistoryFragmentContainer"/>
 </application>
 
 </manifest>

@@ -34,7 +34,7 @@ import com.example.android.fitguuy.Autenfication.SigninWelcomePage
 import com.example.android.fitguuy.Autenfication.SignupFragment
 import com.example.android.fitguuy.Autenfication.TitleFragment
 import com.example.android.fitguuy.Record.RecordFragment
-import com.example.android.fitguuy.WorkoutHistory.HistoryActivity
+import com.example.android.fitguuy.WorkoutHistory.HistoryFragmentContainer
 import com.example.android.fitguuy.WorkoutHistory.HistoryFragment
 import com.example.android.fitguuy.WorkoutSession.EditWorkOut
 import com.example.android.fitguuy.WorkoutSession.RegisterWorkout
@@ -53,6 +53,7 @@ class MainActivity : AppCompatActivity() {
     private val recordFragment = RecordFragment()
     private val SignupFragment = SignupFragment()
     private val SigninWelcomePage = SigninWelcomePage()
+    private val historyActivity = HistoryFragmentContainer()
     lateinit var binding: ActivityMainBinding
 
 
@@ -73,7 +74,7 @@ class MainActivity : AppCompatActivity() {
             when(it.itemId){
                 R.id.homeScreen ->replaceFragment(TitleFragment)
                 R.id.workoutScreen ->replaceFragment(recordFragment)
-                R.id.historyFragment -> startNewActivity()
+                R.id.historyFragment -> replaceFragment(historyActivity)
                 //R.id.aboutApp -> replaceFragment(AboutFragment)
             }
             true
@@ -83,7 +84,7 @@ class MainActivity : AppCompatActivity() {
 
     }
     private fun startNewActivity(){
-        val intent = Intent(this, HistoryActivity::class.java)
+        val intent = Intent(this, HistoryFragmentContainer::class.java)
         startActivity(intent)
     }
 
