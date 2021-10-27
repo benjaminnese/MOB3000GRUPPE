@@ -41,6 +41,8 @@ interface WorkoutDatabaseDao {
     fun delete(key:Workout) {
 
     }
+    @Query("DELETE FROM sqlite_sequence where name='workout_history_table'")
+    suspend fun clearWTab()
 
     @Query("DELETE FROM workout_history_table")
     suspend fun deleteAllWor()
@@ -50,7 +52,7 @@ interface WorkoutDatabaseDao {
 
 
     @Query("DELETE FROM sqlite_sequence where name='exercise_plan_table'")
-    suspend fun clearETab()
+    suspend fun clearExerciseTab()
 
     @Query("SELECT * FROM exercise_plan_table WHERE id = :key")
     fun getExerciseplan(key: String):LiveData<List<Exercise>>
@@ -61,8 +63,7 @@ interface WorkoutDatabaseDao {
     @Query("SELECT * FROM exercise_plan_table WHERE part_of_name='default'" )
     fun getDefaultExercisePlan(): LiveData<List<Exercise>?>
 
-    @Query("DELETE FROM sqlite_sequence where name='workout_history_table'")
-    suspend fun clearWTab()
+
 
     @Query("DELETE FROM exercise_plan_table")
     suspend fun deleteAllEx()
