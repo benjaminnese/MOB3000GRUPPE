@@ -49,7 +49,6 @@ class HistoryDetailFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_workout_history_row_detail, container, false)
-        //val titleTV = view.findViewById<TextView>(R.id.titleTV)
 
         val txtVtype1 = view.findViewById<TextView>(R.id.type1)
         val txtVreps1 = view.findViewById<TextView>(R.id.reps1)
@@ -79,15 +78,15 @@ class HistoryDetailFragment : Fragment() {
         // TODO: Rename parameter arguments, choose names that match
         // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
         private const val IDJ = "param1"
-        private const val TYPE1 = "param1"
-        private const val REPS1 = "param1"
-        private const val  WEIGHT1 = "param1"
-        private const val  TYPE2 = "param1"
-        private const val  REPS2 = "param1"
-        private const val  WEIGHT2 = "param1"
-        private const val  TYPE3 = "param1"
-        private const val  REPS3 = "param1"
-        private const val  WEIGHT3 = "param1"
+        private const val TYPE1 = "param2"
+        private const val REPS1 = "param3"
+        private const val  WEIGHT1 = "param4"
+        private const val  TYPE2 = "param5"
+        private const val  REPS2 = "param6"
+        private const val  WEIGHT2 = "param7"
+        private const val  TYPE3 = "param8"
+        private const val  REPS3 = "param9"
+        private const val  WEIGHT3 = "param10"
 
         /**
          * Use this factory method to create a new instance of
@@ -102,15 +101,15 @@ class HistoryDetailFragment : Fragment() {
             val args = Bundle()
 
             args.putString(IDJ, workout.id.toString())
-            args.putString(TYPE1, workout.type1.toString())
-            args.putString(REPS1, workout.reps1.toString())
-            args.putString(WEIGHT1, workout.weight1.toString())
-            args.putString(TYPE2, workout.type2.toString())
-            args.putString(REPS2, workout.reps2.toString())
-            args.putString(WEIGHT2, workout.weight2.toString())
-            args.putString(TYPE3, workout.type3.toString())
-            args.putString(REPS3, workout.reps3.toString())
-            args.putString(WEIGHT3, workout.weight3.toString())
+            args.putString(TYPE1, workout.type1)
+            args.putString(REPS1, workout.reps1)
+            args.putString(WEIGHT1, workout.weight1)
+            args.putString(TYPE2, workout.type2)
+            args.putString(REPS2, workout.reps2)
+            args.putString(WEIGHT2, workout.weight2)
+            args.putString(TYPE3, workout.type3)
+            args.putString(REPS3, workout.reps3)
+            args.putString(WEIGHT3, workout.weight3)
             fragment.arguments = args
             return fragment
         }
