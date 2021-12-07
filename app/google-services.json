@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "219484699225",
+    "project_id": "fitguuy",
+    "storage_bucket": "fitguuy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219484699225:android:f3efd6cf0a3f5d677d0f48",
+        "android_client_info": {
+          "package_name": "com.example.android.fitguuy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "219484699225-umrma1kkqbspfk6crlibnn79o14invgm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDioLuT-EiLD7GuofWiaE_8FUQm19XFkq0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "219484699225-umrma1kkqbspfk6crlibnn79o14invgm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219484699225:android:0d9822552c285a037d0f48",
+        "android_client_info": {
+          "package_name": "com.fitguuygroup.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "219484699225-umrma1kkqbspfk6crlibnn79o14invgm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDioLuT-EiLD7GuofWiaE_8FUQm19XFkq0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "219484699225-umrma1kkqbspfk6crlibnn79o14invgm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

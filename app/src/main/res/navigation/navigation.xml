@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/navigation_fragment_landing_page_welcome_screen">
+    <fragment
+        android:id="@+id/navigation_fragment_landing_page_welcome_screen"
+        android:name="com.example.android.fitguuy.autenfication.SigninWelcomePage"
+        android:label="@string/Home"
+        tools:layout="@layout/fragment_landing_page_welcome_screen">
+        <action
+            android:id="@+id/action_navigation_fragment_landing_page_welcome_screen_to_landingPageLoginFragment"
+            app:destination="@id/landingPageLoginFragment" />
+        <action
+            android:id="@+id/action_navigation_fragment_landing_page_welcome_screen_to_homePage"
+            app:destination="@id/homePage" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_fragment_record"
+        android:name="com.example.android.fitguuy.record.RecordFragment"
+        android:label="@string/title_record"
+        tools:layout="@layout/fragment_record">
+    </fragment>
+
+    <fragment
+        android:id="@+id/landingPageLoginFragment"
+        android:name="com.example.android.fitguuy.autenfication.LandingPageLoginFragment"
+        android:label="LandingPageLoginFragment">
+        <action
+            android:id="@+id/action_landingPageLoginFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+        <action
+            android:id="@+id/action_landingPageLoginFragment_to_homePage"
+            app:destination="@id/homePage" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.example.android.fitguuy.autenfication.SignupFragment"
+        android:label="SignupFragment">
+        <action
+            android:id="@+id/action_signupFragment_to_landingPageLoginFragment"
+            app:destination="@id/landingPageLoginFragment" />
+        <action
+            android:id="@+id/action_signupFragment_to_homePage"
+            app:destination="@id/homePage" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePage"
+        android:name="com.example.android.fitguuy.autenfication.HomePage"
+        android:label="HomePage">
+        <action
+            android:id="@+id/action_homePage_to_navigation_fragment_landing_page_welcome_screen"
+            app:destination="@id/navigation_fragment_landing_page_welcome_screen" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyDetailFragment"
+        android:name="com.example.android.fitguuy.workouthistory.HistoryDetailFragment"
+        android:label="HistoryDetailFragment" />
+    <fragment
+        android:id="@+id/navigation_fragment_history_workout"
+        android:name="com.example.android.fitguuy.workouthistory.HistoryFragment"
+        android:label="HistoryFragment" >
+        <action
+            android:id="@+id/action_historyFragment_to_historyDetailFragment"
+            app:destination="@id/historyDetailFragment" />
+    </fragment>
+</navigation>

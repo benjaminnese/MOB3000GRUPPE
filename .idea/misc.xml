@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/benja/AndroidStudioProjects/Fitguuy/MOB3000GRUPPE/app/src/main/res/drawable-v24/roundbutton.xml" value="0.1" />
+        <entry key="..\:/Users/benja/AndroidStudioProjects/Fitguuy/MOB3000GRUPPE/app/src/main/res/drawable/baseline_dark_mode_24.xml" value="0.1795" />
+        <entry key="..\:/Users/benja/AndroidStudioProjects/Fitguuy/MOB3000GRUPPE/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1" />
+        <entry key="..\:/Users/benja/AndroidStudioProjects/Fitguuy/MOB3000GRUPPE/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.1" />
+        <entry key="..\:/Users/benja/AndroidStudioProjects/Fitguuy/MOB3000GRUPPE/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/benja/AndroidStudioProjects/Fitguuy/MOB3000GRUPPE/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.1" />
+        <entry key="..\:/Users/benja/AndroidStudioProjects/Fitguuy/MOB3000GRUPPE/app/src/main/res/drawable/roundbutton.xml" value="0.1" />
+        <entry key="..\:/Users/benja/AndroidStudioProjects/Fitguuy/MOB3000GRUPPE/app/src/main/res/drawable/roundedbuttonlogin.xml" value="0.1" />
+        <entry key="..\:/Users/benja/AndroidStudioProjects/Fitguuy/MOB3000GRUPPE/app/src/main/res/layout/activity_main.xml" value="0.14990942028985507" />
+        <entry key="..\:/Users/benja/AndroidStudioProjects/Fitguuy/MOB3000GRUPPE/app/src/main/res/layout/fragment_fullscreen.xml" value="0.15217391304347827" />
+        <entry key="..\:/Users/benja/AndroidStudioProjects/Fitguuy/MOB3000GRUPPE/app/src/main/res/layout/fragment_history_workout.xml" value="0.1" />
+        <entry key="..\:/Users/benja/AndroidStudioProjects/Fitguuy/MOB3000GRUPPE/app/src/main/res/layout/fragment_history_workout_row.xml" value="0.3650107991360691" />
+        <entry key="..\:/Users/benja/AndroidStudioProjects/Fitguuy/MOB3000GRUPPE/app/src/main/res/layout/fragment_history_workout_row_detail.xml" value="0.3125" />
+        <entry key="..\:/Users/benja/AndroidStudioProjects/Fitguuy/MOB3000GRUPPE/app/src/main/res/layout/fragment_home.xml" value="0.3026041666666667" />
+        <entry key="..\:/Users/benja/AndroidStudioProjects/Fitguuy/MOB3000GRUPPE/app/src/main/res/layout/fragment_landing_page_login.xml" value="0.22" />
+        <entry key="..\:/Users/benja/AndroidStudioProjects/Fitguuy/MOB3000GRUPPE/app/src/main/res/layout/fragment_landing_page_register.xml" value="0.1" />
+        <entry key="..\:/Users/benja/AndroidStudioProjects/Fitguuy/MOB3000GRUPPE/app/src/main/res/layout/fragment_landing_page_welcome_screen.xml" value="0.1" />
+        <entry key="..\:/Users/benja/AndroidStudioProjects/Fitguuy/MOB3000GRUPPE/app/src/main/res/layout/fragment_no_user_home.xml" value="0.2" />
+        <entry key="..\:/Users/benja/AndroidStudioProjects/Fitguuy/MOB3000GRUPPE/app/src/main/res/layout/fragment_record.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/benja/AndroidStudioProjects/Fitguuy/MOB3000GRUPPE/app/src/main/res/layout/fragment_record_edit.xml" value="0.3026041666666667" />
+        <entry key="..\:/Users/benja/AndroidStudioProjects/Fitguuy/MOB3000GRUPPE/app/src/main/res/layout/fragment_record_edit_row.xml" value="0.3" />
+        <entry key="..\:/Users/benja/AndroidStudioProjects/Fitguuy/MOB3000GRUPPE/app/src/main/res/layout/fragment_record_row.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/benja/AndroidStudioProjects/Fitguuy/MOB3000GRUPPE/app/src/main/res/layout/fragment_workout_history.xml" value="0.1" />
+        <entry key="..\:/Users/benja/AndroidStudioProjects/Fitguuy/MOB3000GRUPPE/app/src/main/res/layout/fragment_workout_history_row_detail.xml" value="0.1" />
+        <entry key="..\:/Users/benja/AndroidStudioProjects/Fitguuy/MOB3000GRUPPE/app/src/main/res/layout/history_list_item.xml" value="0.2657407407407407" />
+        <entry key="..\:/Users/benja/AndroidStudioProjects/Fitguuy/MOB3000GRUPPE/app/src/main/res/menu/bottom_nav_menu.xml" value="0.19947916666666668" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

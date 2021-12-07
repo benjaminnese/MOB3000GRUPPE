@@ -1,0 +1,78 @@
+<!--
+  ~ Copyright 2018, The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <string name="app_name">FitGuuy</string>
+
+
+    <string name="edit_workout">Rediger</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">E-post</string>
+    <string name="prompt_password">Passord</string>
+    <string name="welcome">Velkommen!</string>
+
+
+    <string name="title_record">Record</string>
+    <string name="title_history">History</string>
+    <string name="Home">Home</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails</string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="default_web_client_id1" />
+    <string name="date">Date:</string>
+    <string name="id">ID:</string>
+    <string name="workoutname">WorkoutName</string>
+    <string name="home">Home</string>
+    <string name="welcome1">Welcome</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="log_inn">Log inn</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="or_login_with">or login with</string>
+    <string name="fitguuy_logo">FitGuuy logo</string>
+    <string name="create_new_account">Create new account</string>
+    <string name="name">Name</string>
+    <string name="john_johnson">John Johnson</string>
+    <string name="email">Email</string>
+    <string name="example_example_com">Example@example.com</string>
+    <string name="password">Password</string>
+    <string name="password1">Password</string>
+    <string name="retype_password">Retype password</string>
+    <string name="register">Register</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="login">Login</string>
+    <string name="welcome11">Welcome</string>
+    <string name="login_register">Login/Register</string>
+    <string name="continue_without_user">Continue without user</string>
+    <string name="lagre">Lagre</string>
+    <string name="legg_til">Legg til</string>
+    <string name="exercise_name">Exercise name..</string>
+    <string name="squat">Squat</string>
+    <string name="_100kg">100KG</string>
+
+</resources>
